@@ -1,0 +1,38 @@
+---
+title: "Problem Set 0, Problem 2 (Creating a RMarkdown File)"
+author: "Tanvir"
+date: "2025-02-23"
+output: html_document
+---
+
+
+## Calculating Probability From the Standard Normal Distribution
+
+The following code explains how to calculate probabilities from the standard normal distribution using R.
+
+
+```{r}
+# Calculate P(Z < 1.96)
+
+pnorm(q = 1.96)
+
+# note that we can also write 
+
+pnorm(q = 1.96, mean = 0, sd = 1)
+
+```
+
+## Calculating Probability From the Normal Distribution
+
+The following code explains how to calculate probabilities from the normal distribution using R. The nice thing is we can calculate probability for any normal distribution, not just the standard normal distribution. This you cannot do directly using any table from the book.
+
+```{r}
+# Calculate P(X < 1.96) for a normal distribution with mean 2 and standard deviation 3
+
+pnorm(q = 1.96, mean = 2, sd = 3)
+
+```
+
+
+
+
