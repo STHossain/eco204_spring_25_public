@@ -15,48 +15,5 @@ data <- c(1:5) # you can also use seq() function, use this to create an even seq
 # create a string
 name <- "John Doe"
 
-# create a matrix
-mat <- matrix(1:6, nrow = 2, ncol = 3)
 
-# Create a list that can store different types of objects
-my_list <- list(
-  number = 42,
-  name = "Alice",
-  values = c(3, 4, 5)
-)
-print(my_list)
-
-# Create a simple data frame
-df <- data.frame(
-  id = 1:3,
-  name = c("Alice", "Bob", "Charlie"),
-  score = c(85, 90, 88)
-)
-print(df)
-View(df)
-# Create a factor (categorical variable) called temperature
-temp <- factor(c("low", "medium", "high", "medium", "low"))
-temp
-
-
-# Define a simple function to calculate the square of a number
-square <- function(x) {
-  return(x^2)
-}
-
-# Test the function
-square(5)
-square(10)
-
-# If Else condition
-num <- 10
-if (num %% 2 == 0) {
-  print("Even number")
-} else {
-  print("Odd number")
-}
-
-# An example of a for loop
-for (i in 1:5) {
-  print(i)
-}
+# We did upto this 
