@@ -1,0 +1,8 @@
+We didn't do much
+
+- Introduction to R
+- RScript and RMarkdown
+- Solve an interval estimation problem
+- Setting the directory and loading the data sets in R
+- Calculting mean using the function mean()
+
