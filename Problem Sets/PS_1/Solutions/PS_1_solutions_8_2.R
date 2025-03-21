@@ -113,7 +113,7 @@ interval_estimate
 
 #=========== Answer to Question 16.
 # following code will clear the env but you can also click the jharu
-rm(list = ls())
+# rm(list = ls())
 
 # This is a data problem
 # so we need to change the directory and load the data

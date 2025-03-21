@@ -259,7 +259,7 @@ interval_estimate
 # now we will load the data set and calculate the confidence interval again
 
 # clear the environment
-rm(list = ls())
+# rm(list = ls())
 
 # Now we don't need to change the directory again because we need to do it once
 
