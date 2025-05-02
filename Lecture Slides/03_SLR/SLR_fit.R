@@ -1,7 +1,6 @@
 
 
 # Set the directory
-
 setwd("/run/media/tanvir/319E-41B8/SLR/Codes/")
 
 options(scipen = 100)
@@ -11,12 +10,13 @@ library(readxl)
 Fast_Food_Data_SLR <- read_excel("Fast_Food_Data_SLR.xlsx")
 View(Fast_Food_Data_SLR)
 
+
 # Here Fast_Food_Data_SLR is a data frame object
+
+
 
 # Calculate Covariance between Msales and Spop
 cov(Fast_Food_Data_SLR$Spop, Fast_Food_Data_SLR$Msales) 
-
-
 
 
 cor(Fast_Food_Data_SLR$Spop, Fast_Food_Data_SLR$Msales)
@@ -38,6 +38,7 @@ plot(Fast_Food_Data_SLR$Spop, Fast_Food_Data_SLR$Msales,
 
 # Fitting the line
 model <-   lm(Msales ~ Spop, data = Fast_Food_Data_SLR)
+
 summary(model)
 
 
@@ -63,9 +64,9 @@ fitted(model)
 
 # 1. write your own function with model$coefficients
 
-out_pred <- function(new_data){
-  predicted_values <- model$coefficients[1] + model$coefficients[2] * new_data
-  return(predicted_values)
+out_pred <- function(x){
+  yihat <- model$coefficients[1] + model$coefficients[2] * x
+  return(yihat)
 }
 
 # new x values
