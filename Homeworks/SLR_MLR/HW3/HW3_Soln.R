@@ -21,7 +21,7 @@ MSR
 ## -----------------------------------------------------------------------------
 n <- 10
 p <- 2
-MSE <- SSE / (n - p - 1)
+MSE <- SSE / (n - (p + 1))
 MSE
 
 
@@ -36,6 +36,11 @@ Fcalc
 alpha <- 0.05
 n <- 10
 p <- 2
+
+
+# p value approach
+
+pvalue <- 1 - pf(Fcalc, df1 = p, df2 = n - p - 1)
 
 # F test is always one tail test, this is F(1-alpha)
 Fcrit <- qf(p = 1 - alpha, df1 = p, df2 = n - p - 1)
